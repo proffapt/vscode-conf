@@ -1,0 +1,139 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  // TERMINAL
+  // New terminal
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.new"
+  },
+  // Toggle Terminal - hide & unhide
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.togglePanel"
+  },
+  // Close Terminal
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "exit\u000D" },
+    "when": "terminalIsOpen"
+  },
+  // Switch focus between terminal and editor
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.terminal.newWithCwd",
+    "args": { "cwd": "${fileDirname}" },
+    "when": "!terminalIsOpen"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "terminal.focus",
+    "when": "terminalIsOpen && !terminalFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalIsOpen && terminalFocus"
+  },
+  // Terminal Navigation
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+
+  // My code-runner : https://github.com/proffapt/code-runner
+  {
+    "key": "cmd+r",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        {
+          "command": "workbench.action.terminal.newWithCwd",
+          "args": { "cwd": "${fileDirname}" }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "run '${fileBasename}'\u000D" }
+        },
+        "terminal.focus"
+      ]
+    },
+    "when": "!terminalIsOpen"
+  },
+  {
+    "key": "cmd+r",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "run '${fileBasename}'\u000D" }
+        },
+        "terminal.focus"
+      ]
+    },
+    "when": "terminalIsOpen"
+  },
+
+  // FILE EXPLORER
+  // Open explorer -> settings.json
+  // Close explorer
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletVisible"
+  },
+  // Switch focus between explorer and editor
+  {
+    "key": "ctrl+x",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "explorerViewletFocus"
+  },
+  // Operations in file explorer
+  {
+    "key": "ctrl+o", // Use <space> to open but not focus
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "explorer.openToSide",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+
+  // MISC
+  {
+    "key": "ctrl+alt+n",
+    "command": "toggleSuggestionFocus",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "editor.action.toggleWordWrap"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  }
+]
