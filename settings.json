@@ -79,5 +79,7 @@
   },
   "terminal.integrated.cwd": "${fileDirname}",
   "git.openRepositoryInParentFolders": "always",
-  "git.autofetch": true
+  "git.autofetch": true,
+  "redhat.telemetry.enabled": false,
+  "workbench.activityBar.visible": false
 }
