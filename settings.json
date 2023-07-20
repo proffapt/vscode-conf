@@ -83,5 +83,6 @@
   "git.openRepositoryInParentFolders": "always",
   "git.autofetch": true,
   "redhat.telemetry.enabled": false,
-  "terminal.integrated.fontSize": 16
+  "terminal.integrated.fontSize": 16,
+  "workbench.activityBar.visible": false
 }
