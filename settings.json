@@ -67,7 +67,9 @@
   "editor.renderWhitespace": "all",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
-  "[json]": {},
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -81,5 +83,6 @@
   "git.openRepositoryInParentFolders": "always",
   "git.autofetch": true,
   "redhat.telemetry.enabled": false,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "terminal.integrated.fontSize": 14
 }
