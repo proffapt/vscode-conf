@@ -84,8 +84,8 @@
   "git.autofetch": true,
   "redhat.telemetry.enabled": false,
   "terminal.integrated.fontSize": 16,
-  "workbench.activityBar.visible": false,
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  }
+  },
+  "workbench.activityBar.visible": false
 }
