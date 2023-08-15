@@ -86,5 +86,6 @@
   "terminal.integrated.fontSize": 16,
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  }
+  },
+  "workbench.activityBar.visible": false
 }
