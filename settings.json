@@ -87,6 +87,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
-  "workbench.activityBar.visible": false,
-  "go.toolsManagement.autoUpdate": true
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.activityBar.visible": false
 }
