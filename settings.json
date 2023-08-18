@@ -88,5 +88,8 @@
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "go.toolsManagement.autoUpdate": true,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  }
 }
