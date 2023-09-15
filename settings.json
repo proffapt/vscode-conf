@@ -90,6 +90,5 @@
   "go.toolsManagement.autoUpdate": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
-  },
-  "workbench.activityBar.visible": false
+  }
 }
